@@ -1,0 +1,73 @@
+
+================ EDA FINDINGS ================
+
+Dataset Shape:
+(21613, 21)
+
+Dataset Info:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 21613 entries, 0 to 21612
+Data columns (total 21 columns):
+ #   Column         Non-Null Count  Dtype  
+---  ------         --------------  -----  
+ 0   id             21613 non-null  int64  
+ 1   date           21613 non-null  object 
+ 2   price          21613 non-null  float64
+ 3   bedrooms       21613 non-null  int64  
+ 4   bathrooms      21613 non-null  float64
+ 5   sqft_living    21613 non-null  int64  
+ 6   sqft_lot       21613 non-null  float64
+ 7   floors         21613 non-null  float64
+ 8   waterfront     21613 non-null  int64  
+ 9   view           21613 non-null  int64  
+ 10  condition      21613 non-null  int64  
+ 11  grade          21613 non-null  int64  
+ 12  sqft_above     21613 non-null  int64  
+ 13  sqft_basement  21613 non-null  int64  
+ 14  yr_built       21613 non-null  int64  
+ 15  yr_renovated   21613 non-null  int64  
+ 16  zipcode        21613 non-null  int64  
+ 17  lat            21613 non-null  float64
+ 18  long           21613 non-null  float64
+ 19  sqft_living15  21613 non-null  int64  
+ 20  sqft_lot15     21613 non-null  int64  
+dtypes: float64(6), int64(14), object(1)
+memory usage: 3.5+ MB
+
+
+Missing Values (%):
+id               0.0
+grade            0.0
+sqft_living15    0.0
+long             0.0
+lat              0.0
+zipcode          0.0
+yr_renovated     0.0
+yr_built         0.0
+sqft_basement    0.0
+sqft_above       0.0
+condition        0.0
+date             0.0
+view             0.0
+waterfront       0.0
+floors           0.0
+sqft_lot         0.0
+sqft_living      0.0
+bathrooms        0.0
+bedrooms         0.0
+price            0.0
+sqft_lot15       0.0
+dtype: float64
+
+Top Correlations:
+id           id               1.000000
+sqft_lot15   sqft_lot         0.910903
+sqft_above   sqft_living      0.868912
+sqft_living  sqft_living15    0.763878
+             bathrooms        0.746207
+grade        sqft_living      0.743257
+sqft_above   grade            0.735790
+             sqft_living15    0.734137
+price        sqft_living      0.701154
+grade        sqft_living15    0.698435
+dtype: float64
